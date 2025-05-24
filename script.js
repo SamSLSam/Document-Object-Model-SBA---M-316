@@ -32,9 +32,13 @@ const menu = document.querySelector(".menu");
 const firstMenuItem = menu.firstElementChild;
 firstMenuItem.style.color = "yellow"
 
-// Use DocumentFragment to add multiple elements(2 paragraphs)
+// Using DocumentFragment to add multiple elements(2 paragraphs) and an Extra paragraph
 const fragment = document.createDocumentFragment();
 for ( let i = 0; < 2; i++){
     const tempPara = document.createElement("p");
-    temp
+    tempPara.textContent = "Generated content" + (i + 1);
+    fragment.appendChild(tempPara);
+    document.body.appendChild(fragment)
 }
+
+// Using BOM properties 
