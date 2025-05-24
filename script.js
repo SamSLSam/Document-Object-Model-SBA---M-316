@@ -10,7 +10,7 @@ newPara.style.color = "lightgreen";
 // Using appendChild to add (newPara) to body
 document.body.appendChild(newPara);
 
-// Adding Event listener for input validation & Browser Object Model: preventDefault()
+// Adding Event listener for input validation & Browser Object Model: preventDefault() Alerts if name too short
 form.addEventlistner("Submit", function (event) {
     const nameInput = document.getElementById("name").value; 
     If (nameInput.length < 3) {
@@ -26,3 +26,15 @@ messageBox.addEventListener("input", function(){
         messageBox.setAttribute("placeholder", "Keep Trying...");
     }
 });
+
+// Using firstElementChild to Navigate elements with parent-child-sibling relationship(First nav text yellow)
+const menu = document.querySelector(".menu");
+const firstMenuItem = menu.firstElementChild;
+firstMenuItem.style.color = "yellow"
+
+// Use DocumentFragment to add multiple elements(2 paragraphs)
+const fragment = document.createDocumentFragment();
+for ( let i = 0; < 2; i++){
+    const tempPara = document.createElement("p");
+    temp
+}
