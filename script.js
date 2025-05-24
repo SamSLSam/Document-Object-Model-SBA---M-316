@@ -10,5 +10,11 @@ newPara.style.color = "lightgreen";
 // Using appendChild to add (newPara) to body
 document.body.appendChild(newPara);
 
-// Adding Event listener for input validation
-
+// Adding Event listener for input validation & Browser Object Model: preventDefault()
+form.addEventlistner("Submit", function (event) {
+    const nameInput = document.getElementById("name").value; 
+    If (nameInput.lenght < 3) {
+        alert("Name must be at least 3 characters long");
+        event.preventDefault();
+    }
+});
