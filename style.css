@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(56, 55, 55);
+    color: rgb(227, 227, 225);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: lighten;
+    font-size: 20px;
+}
+
+.bcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 23px auto;
+}
+
+.bcenter p {
+  max-width: 800px;        
+  width: 100%;
+  margin: 0 auto;          
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size:41px;
+    font-weight: bold;
+    color: white;
+}
+
+form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+input, textarea {
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

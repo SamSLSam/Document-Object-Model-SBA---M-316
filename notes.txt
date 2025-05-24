@@ -1,0 +1,59 @@
+HTML :
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <nav><a>Home</a></nav>
+        <nav><a>Portfolio</a></nav>
+        <nav><a>Services</a></nav>
+        <nav><a>Book a Session</a></nav>
+    </div>
+    <div class="bcenter">
+        <h2>Bio</h2>
+        <p>
+            Samuel is a Software Engineer with a background in Finance (B.S. Finance) and a recent graduate of Per
+            Scholas.
+            Background in finance and project management, with a focus on scalable web development with full-stack
+            applications using the MERN stack (MongoDB, Express.js, React, Node.js), CI/CD pipeline implementation, and
+            system modernization.
+            Skilled in collaborating across technical and product teams to deliver high-quality, data-driven solutions
+            that improve performance and user experience.
+        </p>
+    </div>
+    <div class="bcenter">
+        <h2>Interest</h2>
+        <p>
+            AI, Machine Learning, Finance, Fashion, Trading, Interior Design, Music, Art Galleries, Gardens
+        </p>
+    </div>
+    <div class="bcenter">
+        <h2>Contact Me</h2>
+        <form action="/submit_form" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
+
+CSS:
