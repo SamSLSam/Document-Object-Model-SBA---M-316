@@ -43,4 +43,4 @@ for ( let i = 0; < 2; i++){
 
 // Using BOM properties for Welcome alert on page load
 console.log("Window width:" + window.innerWidth);
-alert("Welcome to Samuel Site")
+alert("Welcome to Samuel Site");
