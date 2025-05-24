@@ -13,7 +13,7 @@ document.body.appendChild(newPara);
 // Adding Event listener for input validation & Browser Object Model: preventDefault() Alerts if name too short
 form.addEventlistner("Submit", function (event) {
     const nameInput = document.getElementById("name").value; 
-    If (nameInput.length < 3) {
+    If (nameInput.length < 3) ;{
         alert("Name must be at least 3 characters long");
         event.preventDefault();
     }
@@ -41,4 +41,6 @@ for ( let i = 0; < 2; i++){
     document.body.appendChild(fragment)
 }
 
-// Using BOM properties 
+// Using BOM properties for Welcome alert on page load
+console.log("Window width:" + window.innerWidth);
+alert("Welcome to Samuel Site")
